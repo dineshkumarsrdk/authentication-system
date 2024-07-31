@@ -40,7 +40,7 @@ passport.use('local',
 passport.use('google', new GoogleStrategy({
     clientID: process.env.GOOGLE_CLIENT_ID,
     clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-    callbackURL: '/auth/oauth2-google/redirect'
+    callbackURL: process.env.GOOGLE_REDIRECT_URI
 }, async (accessToken, refreshToken, email, done) => {
     // console.log('email'+JSON.stringify(email)+'---------------end');
     // console.log('email'+email.emails[0].value+'---------------end');

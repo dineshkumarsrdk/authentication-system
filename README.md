@@ -1,6 +1,7 @@
 # User Authentication System
 ## _Authentication using Passport.js[OAuth2.0]_
-> Please go ahead and check out the application [Authentication System]() 
+> Please go ahead and check out the application [Authentication System](https://authentication-system-3rny.onrender.com/home)
+
 ![sample-image](/public/images/sample-image.png)
 
 ## About project
@@ -31,7 +32,7 @@ Please remember to add the environment variables.
 - MAIL_PASSKEY=<Passkey for the above mail>(Need to get from google account service)
 - GOOGLE_CLIENT_ID=<Client ID for OAuth>(Needs to be configured at Google console->API Services)
 - GOOGLE_CLIENT_SECRET=<Client secret for OAuth>(Needs to be configured at Google console->API Services)
-
+- GOOGLE_REDIRECT_URI=<Google redirect URI for OAuth>(Needs to be configured at Google console->API Services->OAuth credentials)
 
 ## Features
 
