@@ -1,0 +1,17 @@
+<section>
+    <div id="img-container">
+        <img src="/images/reset.jpg" alt="signup">
+    </div>
+    <form id="verifyForm" action="/auth/forgot-password/verifyCode" method="post">
+        <% if(!isCodeVerified){ %>
+            <p class="alert alert-danger">Enter a valid verification code</p>
+        <% } %>
+        <div class="mb-3">
+            <p>Verification code sent to your registered mail</p>
+            <label for="code" class="form-label">Enter Verification code</label>
+            <input required type="password" autofocus class="form-control" name="code" id="code"
+                placeholder="Enter Code">
+        </div>
+        <button type="submit" class="btn btn-dark w-100">Verify</button>
+    </form>
+</section>
