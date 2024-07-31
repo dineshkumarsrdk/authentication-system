@@ -26,13 +26,13 @@ node index.js
 Please remember to add the environment variables.
 
 ##### Environtment variables
-- PORT = <Your port number>
-- MONGODB_URL = <MongoDB Atlas URL>
-- MAIL_ID = <Mail id for sending email using nodemailer>
-- MAIL_PASSKEY = <Passkey for the above mail>(Need to get from google account service)
-- GOOGLE_CLIENT_ID = <Client ID for OAuth>(Needs to be configured at Google console->API Services)
-- GOOGLE_CLIENT_SECRET = <Client secret for OAuth>(Needs to be configured at Google console->API Services)
-- GOOGLE_REDIRECT_URI = <Google redirect URI for OAuth>(Needs to be configured at Google console->API Services->OAuth credentials)
+- PORT = Your port number 
+- MONGODB_URL = MongoDB Atlas URL 
+- MAIL_ID = Mail id for sending email using nodemailer 
+- MAIL_PASSKEY = Passkey for the above mail (Need to get from google account service)
+- GOOGLE_CLIENT_ID = Client ID for OAuth (Needs to be configured at Google console->API Services)
+- GOOGLE_CLIENT_SECRET = Client secret for OAuth (Needs to be configured at Google console->API Services)
+- GOOGLE_REDIRECT_URI = Google redirect URI for OAuth (Needs to be configured at Google console->API Services->OAuth credentials)
 
 ## Features
 
