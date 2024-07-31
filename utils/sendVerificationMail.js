@@ -5,13 +5,13 @@ export default async function sendVerificationMail(email, code, next) {
     const transpoter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user:'codingninjas2k16@gmail.com',
+            user: process.env.MAIL_ID,
             pass: process.env.MAIL_PASSKEY
         }
     });
     try {
         const mailOptions = {
-            from: 'dineshkumar.srdk@gmail.com',
+            from: process.env.MAIL_ID,
             to: email,
             subject: 'Verification code for password reset',
             html: `<p>Verify code for password reset:</p><h2 style="color:green">${code}</h2>
