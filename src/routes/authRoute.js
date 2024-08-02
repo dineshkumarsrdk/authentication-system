@@ -44,7 +44,7 @@ authRouter.post('/signup', async (req, res, next) => {
         if (existingUser) {
             // alert the user if already exists and redirect
             const message = 'User already exists, please sign in!'
-            res.redirect('/auth/signin');
+            res.render('signin', { user: req.user, message: message });
         } else {
             // password encryption
             const hashedPassword = await bcrypt.hash(password, 10);

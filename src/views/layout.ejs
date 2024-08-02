@@ -20,14 +20,18 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <% if(user) { %>
-                        <% if(!user.googleId) { %>
+                        <% if(user.googleId) { %>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/auth/signout">Sign Out</a>
+                            </li>
+                        <% } else { %>
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="/auth/change-password">Change Password</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/auth/signout">Sign Out</a>
+                            </li>
                         <% } %>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/auth/signout">Sign Out</a>
-                        </li>
                     <% } else { %>
                         <li class="nav-item">
                             <a class="nav-link" href="/auth/signin">Sign In</a>
