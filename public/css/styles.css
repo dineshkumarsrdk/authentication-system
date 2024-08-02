@@ -56,3 +56,20 @@ section form {
 .password-match {
     display: none;
 }
+
+/* media quries for smaller screens */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 0.7rem;
+    }
+    #img-container {
+        display: none;
+    }
+    section {
+        justify-content: center;
+        align-items: center;
+    }
+    section form {
+        width: 80%;
+    }
+}
